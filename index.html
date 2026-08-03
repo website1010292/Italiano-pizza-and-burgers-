@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italiano Pizza &amp; Burgers — Crafted With Passion. Served With Character.</title>
+<meta name="description" content="Italiano Pizza & Burgers — authentic flavors, generous portions, and memorable moments, made fresh for every table. Serving our guests since 2008.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link visually-hidden" href="#top">Skip to content</a>
+
+<!-- ==========================================================================
+     HEADER
+     ========================================================================== -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#top" aria-label="Italiano Pizza & Burgers home">
+      <span class="l1">Italiano</span>
+      <span class="l2">Pizza &amp; Burgers</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#contact" class="btn btn-primary btn-sm">Order Online</a>
+      <button class="hamburger" id="hamburgerBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu"></button>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#locations">Locations</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="header-cta">
+      <a href="#contact" class="btn btn-primary">Order Online</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ==========================================================================
+       HERO
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+      <div class="hero-content">
+        <span class="eyebrow">Serving Our Guests Since 2008</span>
+
+        <h1>Crafted With Passion. <em>Served With Character.</em></h1>
+
+        <p class="hero-sub">Authentic flavors, generous portions, and memorable moments — made fresh for every table.</p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Order Online</a>
+          <a href="#menu" class="link-cta">
+            Explore Menu
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero-details">
+          <div class="hero-detail">
+            <span class="num">I.</span>
+            <span class="label">Artisan Preparation</span>
+          </div>
+          <div class="hero-detail">
+            <span class="num">II.</span>
+            <span class="label">Fresh Ingredients</span>
+          </div>
+          <div class="hero-detail">
+            <span class="num">III.</span>
+            <span class="label">Local Hospitality</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-photo">
+          <!-- Replace src with a real photo, e.g. assets/images/hero-main.jpg -->
+          <img src="assets/images/hero-main.jpg" alt="Fresh artisan pizza and a premium burger plated at Italiano Pizza & Burgers" loading="eager">
+        </div>
+        <div class="hero-photo-secondary">
+          <!-- Replace src with a real photo, e.g. assets/images/hero-secondary.jpg -->
+          <img src="assets/images/hero-secondary.jpg" alt="Restaurant dining atmosphere at Italiano Pizza & Burgers" loading="lazy">
+        </div>
+        <div class="hero-emblem" aria-hidden="true">
+          <div class="hero-emblem-inner">
+            <span class="year">2008</span>
+            <span class="label">Established</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SIGNATURE MENU
+       Category tabs switch instantly via JS — content is rendered client-side
+       from MENU_DATA in js/script.js. No page reload, no network delay.
+       ========================================================================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">The Menu</span>
+        <h2>Our Signature Menu</h2>
+        <p class="section-sub">From hand-finished pizzas to indulgent burgers, every plate is prepared with care and served fresh.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="menuPanel" data-category="pizza" id="tab-pizza">Pizza</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menuPanel" data-category="burgers" id="tab-burgers">Burgers</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menuPanel" data-category="shawarma" id="tab-shawarma">Shawarma &amp; Rolls</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menuPanel" data-category="chicken" id="tab-chicken">Chicken &amp; Sides</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menuPanel" data-category="deals" id="tab-deals">Deals</button>
+      </div>
+
+      <div class="menu-panel" id="menuPanel" role="tabpanel" aria-labelledby="tab-pizza">
+        <!-- JS injects the active category's .menu-grid here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOD STORY
+       Editorial, magazine-style pillars explaining the food philosophy.
+       ========================================================================== -->
+  <section class="story-section" id="philosophy">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Our Philosophy</span>
+        <h2>More Than <em>a Meal</em></h2>
+      </div>
+
+      <div class="story-grid">
+
+        <article class="story-pillar">
+          <div class="story-pillar-media">
+            <!-- Replace src with a real photo, e.g. assets/images/story-fresh.jpg -->
+            <img src="assets/images/story-fresh.jpg" alt="Fresh ingredients being prepared in the kitchen" loading="lazy">
+          </div>
+          <span class="story-pillar-num">I.</span>
+          <h3>Freshly Prepared</h3>
+          <p>Made with attention to freshness and flavor.</p>
+        </article>
+
+        <article class="story-pillar">
+          <div class="story-pillar-media">
+            <!-- Replace src with a real photo, e.g. assets/images/story-generous.jpg -->
+            <img src="assets/images/story-generous.jpg" alt="A generous, shareable spread of food on the table" loading="lazy">
+          </div>
+          <span class="story-pillar-num">II.</span>
+          <h3>Generous By Nature</h3>
+          <p>Food designed for sharing and satisfying meals.</p>
+        </article>
+
+        <article class="story-pillar">
+          <div class="story-pillar-media">
+            <!-- Replace src with a real photo, e.g. assets/images/story-moments.jpg -->
+            <img src="assets/images/story-moments.jpg" alt="Friends and family gathered around a meal" loading="lazy">
+          </div>
+          <span class="story-pillar-num">III.</span>
+          <h3>Made For Real Moments</h3>
+          <p>Casual lunches, family dinners, late-night cravings and celebrations.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED OFFER
+       A single, premium campaign moment for the Buy 1 Get 1 Free offer.
+       ========================================================================== -->
+  <section class="offer-section" id="offer">
+    <div class="offer-inner">
+
+      <div class="offer-media">
+        <!-- Replace src with a real photo, e.g. assets/images/offer-main.jpg -->
+        <img src="assets/images/offer-main.jpg" alt="Two plates of food ready to be shared, part of the Buy 1 Get 1 Free offer" loading="lazy">
+      </div>
+
+      <div class="offer-content">
+        <span class="deal-badge">Buy 1 Get 1 Free</span>
+        <h2>Good Food, <em>Doubled.</em></h2>
+        <p class="offer-sub">Order any featured favorite and we'll bring a second, on us — a small way of saying every table deserves a little more.</p>
+        <div class="offer-ctas">
+          <a href="#contact" class="btn btn-primary">Order Now</a>
+          <a href="#menu" class="link-cta">
+            View Menu
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR STORY
+       Editorial brand-history section — asymmetrical photo/text composition
+       with a small "Established" detail and three plain facts. No stats
+       beyond what was supplied.
+       ========================================================================== -->
+  <section class="our-story-section" id="story">
+    <div class="container">
+      <div class="our-story-inner">
+
+        <div class="our-story-media">
+          <div class="our-story-photo">
+            <!-- Replace src with a real photo, e.g. assets/images/story-heritage.jpg -->
+            <img src="assets/images/story-heritage.jpg" alt="The original Italiano kitchen, hand-preparing dough in 2008" loading="lazy">
+          </div>
+          <span class="our-story-detail">Original Recipe, 2008</span>
+          <div class="our-story-badge" aria-hidden="true">
+            <div class="our-story-badge-inner">
+              <span class="year">2008</span>
+              <span class="label">Established</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="our-story-content">
+          <span class="eyebrow">Our Story</span>
+          <h2>A Table Full of Flavor <em>Since 2008</em></h2>
+          <p class="our-story-body">"We opened our doors back in 2008 with a simple goal: serve piping hot, flavorful fast food at prices that make sense for families and friends gathering together. Three branches later, we still make every pizza crust and burger with the same care."</p>
+
+          <ul class="our-story-facts">
+            <li>Since 2008</li>
+            <li>3 Locations</li>
+            <li>Made With Care</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOSPITALITY
+       The Italiano Experience — four service pillars with minimal line icons.
+       ========================================================================== -->
+  <section class="hospitality-section" id="hospitality">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Hospitality</span>
+        <h2>The Italiano Experience</h2>
+      </div>
+
+      <div class="hospitality-grid">
+
+        <div class="hospitality-item">
+          <span class="hospitality-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20V10M20 20V10M4 10l8-6 8 6M8 20v-6h8v6"></path>
+            </svg>
+          </span>
+          <h3>Outdoor &amp; Indoor Seating</h3>
+          <p>Comfortable tables, whichever way you like to dine.</p>
+        </div>
+
+        <div class="hospitality-item">
+          <span class="hospitality-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h11l3 4v6h-2M4 8v10h2M4 8l1.5-4h6L13 8"></path>
+              <circle cx="8" cy="18" r="2"></circle>
+              <circle cx="17" cy="18" r="2"></circle>
+            </svg>
+          </span>
+          <h3>Quick Delivery &amp; Takeaway</h3>
+          <p>Fresh and fast, whether you dine in or on the go.</p>
+        </div>
+
+        <div class="hospitality-item">
+          <span class="hospitality-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path>
+            </svg>
+          </span>
+          <h3>Casual, Late-Night Friendly</h3>
+          <p>Relaxed evenings for cravings that don't watch the clock.</p>
+        </div>
+
+        <div class="hospitality-item">
+          <span class="hospitality-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 3c9 0 14 5 14 12 0 2.5-1 4-3 4-8 0-12-6-12-13"></path>
+              <path d="M5 3c0 8 3 13 8 15"></path>
+            </svg>
+          </span>
+          <h3>Vegetarian &amp; Seasonal Choices</h3>
+          <p>Thoughtful options that change with what's fresh.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCATIONS
+       Premium branch locator. Addresses are shown as placeholders where an
+       exact street address was not supplied; the phone number is the same
+       across branches, as provided.
+       ========================================================================== -->
+  <section class="locations-section" id="locations">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Locations</span>
+        <h2>Visit Italiano</h2>
+        <p class="section-sub">Three branches, one standard of care.</p>
+      </div>
+
+      <div class="locations-grid">
+
+        <article class="location-card">
+          <span class="location-city">Islamabad</span>
+          <h3>PWD Branch</h3>
+          <p class="location-address">Exact address available on request — call or WhatsApp and our team will guide you in.</p>
+          <div class="location-actions">
+            <a href="tel:+923215669674" class="location-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"></path></svg>
+              Call
+            </a>
+            <a href="https://wa.me/923215669674" class="location-btn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.5L4 20z"></path><path d="M8.5 9.5c0 3.5 2.5 6 6 6"></path></svg>
+              WhatsApp
+            </a>
+            <!-- Placeholder: swap for the exact Google Maps pin link once available -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Italiano+Pizza+%26+Burgers+PWD+Branch+Islamabad" class="location-btn location-btn--ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.3"></circle></svg>
+              Directions
+            </a>
+          </div>
+        </article>
+
+        <article class="location-card">
+          <span class="location-city">Rawalpindi</span>
+          <h3>Gulzar-e-Quaid Branch</h3>
+          <p class="location-address">Exact address available on request — call or WhatsApp and our team will guide you in.</p>
+          <div class="location-actions">
+            <a href="tel:+923215669674" class="location-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"></path></svg>
+              Call
+            </a>
+            <a href="https://wa.me/923215669674" class="location-btn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.5L4 20z"></path><path d="M8.5 9.5c0 3.5 2.5 6 6 6"></path></svg>
+              WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Italiano+Pizza+%26+Burgers+Gulzar-e-Quaid+Rawalpindi" class="location-btn location-btn--ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.3"></circle></svg>
+              Directions
+            </a>
+          </div>
+        </article>
+
+        <article class="location-card">
+          <span class="location-city">Rawalpindi</span>
+          <h3>Satellite Town, Commercial Market Branch</h3>
+          <p class="location-address">Exact address available on request — call or WhatsApp and our team will guide you in.</p>
+          <div class="location-actions">
+            <a href="tel:+923215669674" class="location-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"></path></svg>
+              Call
+            </a>
+            <a href="https://wa.me/923215669674" class="location-btn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.5L4 20z"></path><path d="M8.5 9.5c0 3.5 2.5 6 6 6"></path></svg>
+              WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Italiano+Pizza+%26+Burgers+Satellite+Town+Commercial+Market+Rawalpindi" class="location-btn location-btn--ghost" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.3"></circle></svg>
+              Directions
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REAL ATMOSPHERE GALLERY
+       Editorial masonry gallery. Images are lazy-loaded and fade in as they
+       enter the viewport (see js/script.js — galleryReveal module).
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+
+      <div class="section-head">
+        <span class="eyebrow">Atmosphere</span>
+        <h2>The Italiano Atmosphere</h2>
+        <p class="section-sub">A closer look at our kitchens, our tables, and the moments in between.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Replace each src with a real photo at the filename indicated -->
+        <figure class="gallery-item gallery-item--wide">
+          <img src="assets/images/gallery-exterior.jpg" alt="Italiano Pizza & Burgers restaurant exterior in the evening" loading="lazy">
+          <figcaption>Exterior</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--tall">
+          <img src="assets/images/gallery-dining.jpg" alt="Warm indoor dining atmosphere at Italiano" loading="lazy">
+          <figcaption>Dining Atmosphere</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/images/gallery-outdoor-seating.jpg" alt="Outdoor seating area at Italiano" loading="lazy">
+          <figcaption>Outdoor Seating</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--tall">
+          <img src="assets/images/gallery-pizza-prep.jpg" alt="Pizza being hand-prepared in the kitchen" loading="lazy">
+          <figcaption>Pizza Preparation</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/images/gallery-burgers.jpg" alt="Freshly plated burgers at Italiano" loading="lazy">
+          <figcaption>Burgers</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide">
+          <img src="assets/images/gallery-crispy-chicken.jpg" alt="Crispy fried chicken plated at Italiano" loading="lazy">
+          <figcaption>Crispy Chicken</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--tall">
+          <img src="assets/images/gallery-family-meal.jpg" alt="A family sharing a meal together at Italiano" loading="lazy">
+          <figcaption>Family Meal</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/images/gallery-takeaway.jpg" alt="Takeaway and delivery packaging ready to go" loading="lazy">
+          <figcaption>Takeaway &amp; Delivery</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide">
+          <img src="assets/images/gallery-night.jpg" alt="Italiano restaurant atmosphere at night" loading="lazy">
+          <figcaption>Night-Time Atmosphere</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TRUST / SOCIAL PROOF
+       Rating summary + sample guest feedback, clearly labeled as sample
+       quotes rather than verified reviews.
+       ========================================================================== -->
+  <section class="trust-section" id="trust">
+    <div class="container">
+
+      <div class="trust-rating">
+        <span class="trust-score">4.7<span class="trust-star" aria-hidden="true">★</span></span>
+        <span class="trust-count">250+ Google Reviews</span>
+      </div>
+
+      <p class="trust-disclaimer">Sample guest feedback shown for illustration, pending verified Google reviews.</p>
+
+      <div class="trust-grid">
+
+        <blockquote class="trust-quote">
+          <p>"Delivery was quicker than I expected and everything arrived still hot."</p>
+          <cite>Sample review</cite>
+        </blockquote>
+
+        <blockquote class="trust-quote">
+          <p>"The crispy chicken is genuinely crispy — not soggy like some late-night orders can be."</p>
+          <cite>Sample review</cite>
+        </blockquote>
+
+        <blockquote class="trust-quote">
+          <p>"Good portions for the price, especially with the Buy 1 Get 1 offer on burgers."</p>
+          <cite>Sample review</cite>
+        </blockquote>
+
+        <blockquote class="trust-quote">
+          <p>"Glad they're open late — easy to grab something after a long shift."</p>
+          <cite>Sample review</cite>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CTA BANNER
+       A restrained closing conversion moment.
+       ========================================================================== -->
+  <section class="cta-banner" id="cta">
+    <div class="container">
+      <div class="cta-banner-inner">
+        <h2>Your Table Is Waiting.</h2>
+        <div class="cta-banner-ctas">
+          <a href="#contact" class="btn btn-primary">Order Online</a>
+          <a href="#locations" class="btn btn-ghost">Find a Location</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT / ORDER
+       Final conversion section — every #contact link on the site resolves
+       here. Order Delivery opens WhatsApp with a prefilled message using the
+       one supplied number; nothing beyond it is invented.
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <span class="eyebrow">Contact</span>
+        <h2>Ready When You Are.</h2>
+        <p class="contact-sub">Order for delivery, plan your visit, or simply come hungry.</p>
+
+        <div class="contact-ctas">
+          <a href="https://wa.me/923215669674?text=Hi%2C%20I%27d%20like%20to%20place%20a%20delivery%20order" class="btn btn-primary" target="_blank" rel="noopener">
+            Order Delivery
+          </a>
+          <a href="tel:+923215669674" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"></path></svg>
+            Call +92 321 5669674
+          </a>
+        </div>
+
+        <a href="https://wa.me/923215669674" class="contact-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.5L4 20z"></path><path d="M8.5 9.5c0 3.5 2.5 6 6 6"></path></svg>
+          Chat with us on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a class="logo" href="#top" aria-label="Italiano Pizza & Burgers home">
+          <span class="l1">Italiano</span>
+          <span class="l2">Pizza &amp; Burgers</span>
+        </a>
+        <p class="footer-tagline">Serving our guests since 2008.</p>
+        <ul class="footer-socials" aria-label="Social media (coming soon)">
+          <li>
+            <span class="footer-social-icon" role="img" aria-label="Instagram — coming soon" title="Coming soon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg>
+            </span>
+          </li>
+          <li>
+            <span class="footer-social-icon" role="img" aria-label="Facebook — coming soon" title="Coming soon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 8.5h2.5V5H14c-2 0-3.5 1.5-3.5 3.5V11H8v3.5h2.5V21H14v-6.5h2.5l.5-3.5h-3V9c0-.4.3-.5.5-.5z"></path></svg>
+            </span>
+          </li>
+          <li>
+            <span class="footer-social-icon" role="img" aria-label="TikTok — coming soon" title="Coming soon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 4v10.5a3 3 0 1 1-2.2-2.9M14 4c.4 2 2 3.5 4 3.8V10c-1.5 0-3-.5-4-1.4"></path></svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Locations">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="#locations">PWD Branch — Islamabad</a></li>
+          <li><a href="#locations">Gulzar-e-Quaid Branch — Rawalpindi</a></li>
+          <li><a href="#locations">Satellite Town, Commercial Market Branch — Rawalpindi</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+923215669674">+92 321 5669674</a></li>
+          <li><a href="https://wa.me/923215669674" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear">2026</span> Italiano Pizza &amp; Burgers. All rights reserved.</p>
+      <p class="footer-trademark">Italiano Pizza &amp; Burgers™ and the Italiano logo are trademarks of their respective owner.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================================================
+     MOBILE ORDER BAR
+     Fixed, thumb-friendly quick actions — visible on small screens only.
+     ========================================================================== -->
+<div class="mobile-order-bar" role="navigation" aria-label="Quick order actions">
+  <a href="tel:+923215669674" class="mobile-order-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"></path></svg>
+    Call to Order
+  </a>
+  <a href="https://wa.me/923215669674?text=Hi%2C%20I%27d%20like%20to%20place%20a%20delivery%20order" class="mobile-order-btn mobile-order-btn--primary" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h11l3 4v6h-2M4 8v10h2M4 8l1.5-4h6L13 8"></path><circle cx="8" cy="18" r="2"></circle><circle cx="17" cy="18" r="2"></circle></svg>
+    Order Delivery
+  </a>
+</div>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
